@@ -15,7 +15,7 @@ class CreateAlphasTable extends Migration
     {
         Schema::create('alphas', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('username')->unique();
+            $table->string('handler')->unique();
             $table->string('email')->unique();
             $table->timestamps();
         });
