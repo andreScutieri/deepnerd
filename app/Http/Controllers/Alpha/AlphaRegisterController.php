@@ -6,6 +6,8 @@ use App\Alpha;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\URL;
 
 class AlphaRegisterController extends Controller
 {
@@ -21,13 +23,13 @@ class AlphaRegisterController extends Controller
 	{
 		$this->validator($request->all())->validate();
 
-		return $this->makeAlpha($request->all()) ? back() : redirect('/ty');
+		return $this->makeAlpha($request->all()) ? redirect('/ty') : redirect(url()->previous());
 		
 	}
 
 	public function thankyou() {
 
-		return view('alpha.thankyou')
+		return view('alpha.thankyou');
 
 	}
 
