@@ -2,8 +2,6 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="description" content="">
-  		<meta name="author" content="">
 
 		<title>DeepNerd - Alpha</title>
 
@@ -13,6 +11,12 @@
 		<link rel="stylesheet" href="/css/normalize.css">
 		<link rel="stylesheet" href="/css/skeleton.css">
 		<link rel="stylesheet" href="/css/alpha.css">
+
+    <meta property="og:url" content="http://deepnerd.com.br" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="DeepNerd - Cadastro de Usuários Alpha" />
+    <meta property="og:description" content="Skynerd está de volta. E muito melhor. Cadastre-se para participar do Alpha Testing." />
+    <meta property="og:image" content="{{ URL::to('/') }}/images/deepnerd-promo.jpg" />
 
 	</head>
 	<body>
@@ -38,7 +42,7 @@
 
     <div class="docs-section" id="intro">
       <h6 class="docs-header">O que é a Deep Nerd?</h6>
-      <p>Um grupo de usuários da finada Skynerd passou os últimos 2 anos trabalhando num novo código para uma nova rede: mais rápida, mais simples, mais moderna e mais divertida. O resultado você pode testemunhar agora, como um dos 250 Alpha Testers ou como um dos 2.500 Beta Testers.</p>
+      <p>Um grupo de usuários da finada Skynerd passou os últimos 2 anos trabalhando num novo código para uma nova rede: mais rápida, mais simples, mais moderna e mais divertida. O resultado você pode testemunhar agora, como um dos 250 Alpha Testers ou como um dos 2.500 Beta Testers. Lembramos que nosso grupo <strong>não tem qualquer ligação com a marca JovemNerd nem com a Skynerd original, muito menos compartilha do código da mesma</strong>.</p>
     </div>
 
     <div class="docs-section" id="alpha">
@@ -93,37 +97,40 @@
       </div>
 
       <div class="docs-section" id="footer">
-      	<center><p>&copy; 2017 - DeepNerd - todos os direitos reservados</p></center>
+      	<center>
+          <p>&copy; 2017 - DeepNerd - todos os direitos reservados</p>
+          <p>DeepNerd foi desenvolvida pelo <a href="">grupo DeepNerd</a> e não tem qualquer ligação com o <strong>JovemNerd</strong> ou a marca <strong>Skynerd</strong> nem compartilha do código original da mesma.</p>
+        </center>
       </div>
 
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
 
-      // Store hash
-      var hash = this.hash;
+          // Store hash
+          var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
       });
-    } // End if
-  });
-});
-</script>
+    });
+    </script>
 	</body>
 </html>
