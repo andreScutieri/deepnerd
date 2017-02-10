@@ -14,11 +14,14 @@
 		<link rel="stylesheet" href="/css/skeleton.css">
 		<link rel="stylesheet" href="/css/alpha.css">
 
+		<meta property="fb:app_id" content="{{ config('app.facebook_app_id') }}" />
 		<meta property="og:url" content="http://deepnerd.com.br" />
 	    <meta property="og:type" content="website" />
 	    <meta property="og:title" content="DeepNerd - Cadastro de Usuários Alpha" />
 	    <meta property="og:description" content="Skynerd está de volta. E muito melhor. Cadastre-se para participar do Alpha Testing." />
-	    <meta property="og:image" content="{{ URL::to('/') }}/images/deepnerd-promo.jpg" />
+	    <meta property="og:image" content="http://deepnerd.com.br/images/deepnerd-promo.jpg" />
+	    <meta property="og:image:width" content="1200" />
+	    <meta property="og:image:height" content="630" />
 
 	</head>
 	<body>

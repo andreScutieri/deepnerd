@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'Laravel',
+    'name' => 'Deep Nerd 0.0.1',
 
     /*
     |--------------------------------------------------------------------------
@@ -64,7 +64,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'America/Sao_Paulo',
 
     /*
     |--------------------------------------------------------------------------
@@ -77,7 +77,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'pt-br',
 
     /*
     |--------------------------------------------------------------------------
@@ -123,6 +123,17 @@ return [
     'log' => env('APP_LOG', 'single'),
 
     'log_level' => env('APP_LOG_LEVEL', 'debug'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Facebook OpenGraph Configuration
+    |--------------------------------------------------------------------------
+    |
+    | 
+    |
+    */
+
+    'facebook_app_id' => env('FACEBOOK_APP_ID', ''),
 
     /*
     |--------------------------------------------------------------------------
@@ -176,6 +187,11 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
+        /*
+         * Third-Party Service Providers...
+         */
+        Hootlex\Friendships\FriendshipsServiceProvider::class,
 
     ],
 
