@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Alpha extends Model
 {
-    protected $fillable = ['username', 'email'];
+    protected $fillable = ['handler', 'email'];
 }
