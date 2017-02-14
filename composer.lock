@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7c315e4e703e4e5e746b630eea7c77ab",
-    "content-hash": "8fbf13abc5809fa6ed63d1f60614100a",
+    "hash": "d0d153c8df2baa34b8149b6396b52cf5",
+    "content-hash": "b8e0a55b6252d3ada87710c4d26ce8e9",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -150,6 +150,55 @@
             "time": "2016-11-02 15:56:58"
         },
         {
+            "name": "hootlex/laravel-friendships",
+            "version": "v1.0.21",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hootlex/laravel-friendships.git",
+                "reference": "22106d5a681fb8b391175f4530e61b7fdfcb6a5d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hootlex/laravel-friendships/zipball/22106d5a681fb8b391175f4530e61b7fdfcb6a5d",
+                "reference": "22106d5a681fb8b391175f4530e61b7fdfcb6a5d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "^0.3.2",
+                "fzaninotto/faker": "~1.4",
+                "laravel/laravel": "5.*",
+                "phpunit/phpunit": "5.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Hootlex\\Friendships\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hootlex",
+                    "email": "hootlex@icloud.com"
+                }
+            ],
+            "description": "This package gives Eloquent models the ability to manage their friendships.",
+            "keywords": [
+                "eloqent",
+                "friend-system",
+                "friends",
+                "friendships",
+                "laravel"
+            ],
+            "time": "2016-08-29 23:26:40"
+        },
+        {
             "name": "jakub-onderka/php-console-color",
             "version": "0.1",
             "source": {
@@ -235,6 +284,51 @@
                 }
             ],
             "time": "2015-04-20 18:58:01"
+        },
+        {
+            "name": "kkszymanowski/traitor",
+            "version": "0.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KKSzymanowski/Traitor.git",
+                "reference": "0f3ed8ca01f35d7576d3ad0a43e013825d738909"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KKSzymanowski/Traitor/zipball/0f3ed8ca01f35d7576d3ad0a43e013825d738909",
+                "reference": "0f3ed8ca01f35d7576d3ad0a43e013825d738909",
+                "shasum": ""
+            },
+            "require": {
+                "nikic/php-parser": "^1.0|^2.0|^3.0",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Traitor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kuba Szymanowski",
+                    "email": "kuba.szymanowski@inf24.pl"
+                }
+            ],
+            "description": "Add a trait use statement to existing PHP class",
+            "keywords": [
+                "add",
+                "php",
+                "trait"
+            ],
+            "time": "2016-12-18 21:34:36"
         },
         {
             "name": "laravel/framework",
@@ -981,6 +1075,84 @@
                 "uuid"
             ],
             "time": "2016-11-22 19:21:44"
+        },
+        {
+            "name": "santigarcor/laratrust",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/santigarcor/laratrust.git",
+                "reference": "68f129309f0dc0cba54ca1c6faf014e616cdf7f8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/santigarcor/laratrust/zipball/68f129309f0dc0cba54ca1c6faf014e616cdf7f8",
+                "reference": "68f129309f0dc0cba54ca1c6faf014e616cdf7f8",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/cache": "~5.1",
+                "illuminate/console": "~5.1",
+                "illuminate/support": "~5.1",
+                "kkszymanowski/traitor": "^0.2.0",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "illuminate/database": "~5.1",
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.1"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/commands"
+                ],
+                "psr-4": {
+                    "Laratrust\\": "src/Laratrust/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andrew Elkins",
+                    "homepage": "http://andrewelkins.com"
+                },
+                {
+                    "name": "Zizaco Zizuini",
+                    "email": "zizaco@gmail.com"
+                },
+                {
+                    "name": "Ben Batschelet",
+                    "homepage": "http://github.com/bbatsche"
+                },
+                {
+                    "name": "Michele Angioni",
+                    "email": "michele.angioni@gmail.com"
+                },
+                {
+                    "name": "Santiago Garcia",
+                    "homepage": "http://santigarcor.me"
+                },
+                {
+                    "name": "Mateo Calle",
+                    "homepage": "https://github.com/Mathius17"
+                }
+            ],
+            "description": "This package provides a flexible way to add Role-based Permissions to Laravel",
+            "keywords": [
+                "acl",
+                "authorization",
+                "laratrust",
+                "laravel",
+                "permissions",
+                "php",
+                "rbac",
+                "roles"
+            ],
+            "time": "2017-02-06 21:30:08"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3331,7 +3503,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "santigarcor/laratrust": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
