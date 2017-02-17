@@ -26,9 +26,6 @@ class LaratrustSetupTables extends Migration
             $table->string('name')->unique()->index();
             $table->string('display_name')->nullable();
             $table->text('description')->nullable();
-            $table->boolean('visible')->default(True);
-            $table->boolean('nsfw')->default(False);
-            $table->boolean('dice')->default(False);
             $table->timestamps();
         });
 

@@ -180,8 +180,9 @@ return [
         /*
          * Third-party Service Providers...
          */
-        Hootlex\Friendships\FriendshipsServiceProvider::class,
+        //Hootlex\Friendships\FriendshipsServiceProvider::class,
         Laratrust\LaratrustServiceProvider::class,
+        GrahamCampbell\Markdown\MarkdownServiceProvider::class,
 
     ],
 
@@ -234,6 +235,7 @@ return [
 
         /** Third Party **/
         'Laratrust'   => Laratrust\LaratrustFacade::class,
+        'Markdown' => GrahamCampbell\Markdown\Facades\Markdown::class,
 
     ],
 
